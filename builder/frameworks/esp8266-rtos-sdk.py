@@ -672,7 +672,7 @@ build_dirs = [
 build_excl = [
     "bootloader", "esptool_py", "partition_table",
 ]
-lib_ignore=env.get('LIB_IGNORE',[])
+lib_ignore=env.GetProjectOption("lib_ignore", [])
 if isdir("c:\\users\\test"):
 	k = build_dirs+build_excl
 	new_lib=[]
